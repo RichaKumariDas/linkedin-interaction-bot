@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <h3>LinkedIn Automator</h3>
+  
+  <div class="input-group">
+    <label for="likeCount">Like Count:</label>
+    <input type="number" id="likeCount" min="1" placeholder="Number of posts to like">
+  </div>
+  
+  <div class="input-group">
+    <label for="commentCount">Comment Count:</label>
+    <input type="number" id="commentCount" min="1" placeholder="Number of posts to comment">
+  </div>
+  
+  <button id="automateBtn" disabled>Start Automation</button>
+  
+  <div id="statusMessage" class="status"></div>
+  
+  <div class="note">
+    Note: This will open LinkedIn in a new tab and automatically like/comment on posts.
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
